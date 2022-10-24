@@ -46,7 +46,7 @@ body {
 }
 
 .current {
-  accent-color: #2196f3;
+  color: var(--attention-color);
 }
 
 .nav-link {
@@ -60,7 +60,8 @@ body {
 .nav-link:hover,
 .nav-link:focus,
 .header-contacts:hover,
-.header-contacts:focus {
+.header-contacts:focus,
+.current {
   color: var(--attention-color);
 }
 
@@ -112,12 +113,12 @@ body {
 
 .hero-description-title {
   line-height: 1.14;
+  font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .hero-description {
-  font-weight: 400;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
@@ -147,7 +148,6 @@ body {
 }
 
 .team-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -222,11 +222,15 @@ body {
 }
 
 .filter-info {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 
   letter-spacing: 0.03em;
 
   color: var(--feature-color);
+}
+
+.filter-btn.active {
+  background-color: var(--attention-color);
+  color: var(--hat-color);
 }
